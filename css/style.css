@@ -104,7 +104,7 @@ aside {
 }
 
 .background-atachmant {
-    background-image: url("/img/bg-picture.png");
+    background-image: url("img/bg-picture.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right center;
