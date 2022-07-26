@@ -2,18 +2,24 @@
     box-sizing: border-box;
     line-height: 1.5;
     font-family: 'PT Sans', sans-serif;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 
 }
 
+.container {
+    max-width: 1440px;
+    display: block;
+    align-items: center;
+    margin: auto;
+}
+
 header {
-    position: sticky;
+    position: fixed;
     top: 0px;
     left: 0px;
     background-color: #fff;
     width: 100%;
     height: 80px;
-    margin-bottom: 70px;
     z-index: 2;
     padding-left: 15px;
 
@@ -92,23 +98,25 @@ img {
     max-width: 1440px;
     display: flex;
     margin: auto;
+    margin-top: 150px;
 }
 
 aside {
     position: sticky;
-    top: 80px;
+    top: 150px;
     min-height: 385px;
     width: 30%;
     margin-right: 30px;
     padding-left: 10px;
 }
 
-.background-atachmant {
-    background-image: url("img/bg-picture.png");
+.documentation {
+    background-image: url("./img/bg-picture.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: right center;
-    width: 70%;
+    background-position: 100% 80px;
+    /* background-size: 46%; */
+
 }
 
 ul .menu {
@@ -202,6 +210,7 @@ h1 {
     padding-left: 2px;
     text-align: left;
     margin-bottom: 30px;
+    margin-top: 150px;
 }
 
 h1::before {
@@ -219,11 +228,12 @@ h1::before {
     border-top: 1px solid #BFBFBF;
     border-bottom: 1px solid #BFBFBF;
     border-radius: 1px;
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    padding: 20px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .flip-card {
@@ -237,12 +247,12 @@ h1::before {
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.8s;
+    transition: transform 1s;
     transform-style: preserve-3d;
 }
 
 .flip-card:hover .flip-card-inner {
-    transform: rotateX(180deg);
+    transform: rotateX(-180deg);
 }
 
 .flip-card-front,
@@ -252,18 +262,24 @@ h1::before {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    border-radius: 8px;
 }
 
 .flip-card-front {
-    background-color: #bbb;
-    color: black;
+    /* background-color: #E6E6E6; */
 }
 
 .flip-card-back {
+    background-color: #000;
     transform: rotateX(180deg);
 }
 
 main {
     max-width: 1440px;
     margin: auto;
+}
+
+.background-atachmant {
+    width: 70%;
+
 }
