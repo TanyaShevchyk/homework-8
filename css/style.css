@@ -126,6 +126,7 @@ h2 {
     font-size: 32px;
     display: flex;
     flex-direction: column;
+    padding-top: 18px;
 }
 
 h2 .chapter {
@@ -298,6 +299,7 @@ h1::before {
         font-size: 32px;
         display: flex;
         flex-direction: row;
+        padding-top: 24px;
     }
 
     h2 .chapter {
@@ -386,6 +388,7 @@ h1::before {
         font-size: 36px;
         display: flex;
         flex-direction: row;
+        padding-top: 28px;
     }
 
     h2 .chapter {
